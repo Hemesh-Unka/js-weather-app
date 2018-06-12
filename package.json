@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hemesh-Unka/js-weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hemesh-Unka/js-weather-app/issues"
+  },
+  "homepage": "https://github.com/Hemesh-Unka/js-weather-app#readme",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
