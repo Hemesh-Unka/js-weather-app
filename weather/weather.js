@@ -9,13 +9,17 @@ const getWeather = (lat, lng, callback) => {
     }, (error, response, body) => {
         if (!error && response.statusCode === 200) {
             callback(undefined, {
-                temperature: body.currently.temperature,
-                apparentTemperature: body.currently.apparentTemperature,
+                temperature: toCelcius(body.currently.temperature),
+                apparentTemperature: toCelcius(body.currently.apparentTemperature),
             });
         } else {
             callback('Unable to fetch weather.');
         }
     });
+};
+
+const toCelcius = (temperature) => {
+    return ((5/9) * (temperature - 32)).toFixed(1);
 };
 
 module.exports.getWeather = getWeather;
