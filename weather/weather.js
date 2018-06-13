@@ -1,9 +1,9 @@
+const dotenv = require('dotenv').config();
 const request = require('request');
-// b7f0e3d420ac74516726f236afd9f547
 
 const getWeather = (lat, lng, callback) => {
     request({
-        url: `https://api.darksky.net/forecast/b7f0e3d420ac74516726f236afd9f547/${lat},${lng}`,
+        url: `https://api.darksky.net/forecast/${process.env.DS_API_KEY}/${lat},${lng}`,
         json: true,
 
     }, (error, response, body) => {
