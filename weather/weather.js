@@ -18,8 +18,6 @@ const getWeather = (lat, lng, callback) => {
     });
 };
 
-const toCelcius = (temperature) => {
-    return ((5/9) * (temperature - 32)).toFixed(1);
-};
+const toCelcius = temperature => ((5 / 9) * (temperature - 32)).toFixed(1);
 
 module.exports.getWeather = getWeather;
