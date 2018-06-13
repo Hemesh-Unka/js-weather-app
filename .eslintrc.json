@@ -6,7 +6,6 @@
           "object": false
         }, {
           "enforceForRenamedProperties": false
-        }],
-        "indent": ["error", 4]
+        }]
       }
 }
